@@ -148,6 +148,37 @@ main>section {
 }
 
 
+
+
+
+/* love and enjoy section  */
+.features {
+    gap: 140px;
+}
+
+#feature-section-title {
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+
+.feature-card{
+    padding: 30px ;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06) ;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+
+.feature-card .feature-title {
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
+
+
 /* fact styls */
 
 .facts-container {
@@ -195,12 +226,20 @@ main>section {
 
 .sponsor-companies{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
 }
 
 .sponsor-companies img {
     filter: grayscale(100%);
 }
+
+
+
+
+
+
+
+
 
 /* header responsive media query */
 
