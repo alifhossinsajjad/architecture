@@ -15,7 +15,7 @@
 .section-title {
     font-size: 2.8rem;
     font-weight: 700;
-} 
+}
 
 .display-flex {
     display: flex;
@@ -118,7 +118,7 @@ main>section {
     width: 100%;
 }
 
-/* tesam and features related styles */
+/* teams and features related styles */
 
 .team-img-container {
     display: grid;
@@ -130,7 +130,6 @@ main>section {
     margin-left: 130px;
     max-width: 537px;
 }
-
 
 
 .teams {
@@ -161,13 +160,12 @@ main>section {
     padding-left: 20px;
 }
 
-.feature-card{
-    padding: 30px ;
-    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06) ;
-    margin-bottom: 20px;
+.feature-card {
+    padding: 30px;
     border-radius: 8px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
 }
-
 
 .feature-card .feature-title {
     font-weight: 600;
@@ -176,8 +174,22 @@ main>section {
     margin-bottom: 0px;
 }
 
+#experience-badge {
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -100px;
+    margin-top: -100px;
+}
 
+#experience-year {
+    font-size: 4rem;
+    font-weight: 700;
+}
 
+.featured-architect img {
+    width: 170%;
+}
 
 /* fact styls */
 
@@ -218,13 +230,13 @@ main>section {
 
 /* sponsors styles  */
 
-.sponsor-info{
+.sponsor-info {
     max-width: 540px;
-    margin: 50px auto ;
+    margin: 50px auto;
     text-align: center;
 }
 
-.sponsor-companies{
+.sponsor-companies {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
 }
@@ -252,18 +264,48 @@ main>section {
         flex-direction: column;
     }
 
-    .team-img-container, .facts-container, .sponsor-companies {
+    .team-img-container,
+    .facts-container,
+    .sponsor-companies {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .facts-container, .sponsor-companies{
+    .facts-container,
+    .sponsor-companies {
         justify-content: center;
         gap: 24px;
     }
-    .our-features{
+
+    .our-features {
         margin-left: 20px;
     }
+
+    .featured-architect img {
+        width: 350px;
+    }
+
+    #experience-badge {
+        /* padding: 2px 1px;
+        font-size: 1.2rem;
+        font-weight: 500;
+        margin-left: 10px; */
+        display: none;
+       
+    }
+
+    #experience-year {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    .features{
+        align-items: center;
+    }
+
 }
+
+
+
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
 
@@ -275,14 +317,21 @@ main>section {
     .our-features {
         margin: 50px auto;
     }
-    .facts-container, .sponsor-companies{
+
+    .facts-container,
+    .sponsor-companies {
         justify-items: center;
         grid-template-columns: repeat(2, 1fr);
         gap: 24px;
     }
+
     .sponsor-title {
         justify-items: center;
-        
+
+    }
+
+    .featured-architect img {
+        width: 100%;
     }
 
 }
