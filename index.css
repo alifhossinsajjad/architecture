@@ -121,7 +121,7 @@ main > section {
 }
 
 .our-features {
-    margin-left: 120px;
+    margin-left: 130px;
     max-width: 537px;
 }
 
@@ -146,7 +146,18 @@ main > section {
 /* header responsive media query */
 
 @media screen and (max-width: 576px) {
-    .navbar, .nav-links {
+    .navbar, 
+    .nav-links, 
+    .features,
+    .teams{
         flex-direction: column;
+    }
+
+    .team-img-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .our-features{
+        margin-left: 20px;
     }
 }
