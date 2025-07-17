@@ -3,14 +3,19 @@
 
 
 .work-sans-font {
-  font-family: "Work Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 
 /* shear styls */
+
+.section-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+} 
 
 .display-flex {
     display: flex;
@@ -18,7 +23,7 @@
 
 /* Dark-02 */
 .text-gray {
-    color:#424242;
+    color: #424242;
 }
 
 /* Dark-03 */
@@ -58,13 +63,13 @@ main {
     margin: 0 auto;
 }
 
-main > section {
+main>section {
     margin: 130px;
 }
 
+
+
 /* header style */
-
-
 
 /* nav related styles */
 
@@ -88,7 +93,8 @@ main > section {
     font-weight: 500;
 }
 
-.navbar, .banner {
+.navbar,
+.banner {
     max-width: 1440px;
     margin: 0 auto;
 }
@@ -132,10 +138,10 @@ main > section {
 }
 
 
-.feature-title {
+/* .feature-title {
     font-size: 2.8rem;
     font-weight: 700;
-}
+} */
 
 #quick-list {
     font-weight: 500;
@@ -146,10 +152,11 @@ main > section {
 /* header responsive media query */
 
 @media screen and (max-width: 576px) {
-    .navbar, 
-    .nav-links, 
+
+    .navbar,
+    .nav-links,
     .features,
-    .teams{
+    .teams {
         flex-direction: column;
     }
 
@@ -157,7 +164,19 @@ main > section {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .our-features{
+    .our-features {
         margin-left: 20px;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+
+    .teams,
+    .features {
+        flex-direction: column;
+    }
+
+    .our-features {
+        margin: 50px auto;
     }
 }
